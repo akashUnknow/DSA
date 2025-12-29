@@ -15,7 +15,14 @@ public class Solutation {
 //        Collections.sort(employees, new NameAgeComparator());
 //        System.out.println(employees);
         Question question=new Question();
-        System.out.println(question.firstUniqChar("loveleetcode"));
+        int[] res=null;
+        System.out.println(question.twoSum(new int[]{2,7,11,15},9));
+        res=question.twoSum(new int[]{3,2,4},6);
+        for (int a:res){
+            System.out.println(a);
+        }
+
     }
+
 
 }

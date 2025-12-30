@@ -1,8 +1,14 @@
 package main.java.org.akash.solutation;
 
+import main.java.org.akash.solutation.Link.ListNode;
+
 import java.util.HashMap;
+import java.util.Stack;
+import java.util.logging.Logger;
 
 public class Solutation {
+    static Logger logger = Logger.getLogger(Solutation.class.getName());
+
 
     public static void main(String[] args) {
 
@@ -15,13 +21,19 @@ public class Solutation {
 //        Collections.sort(employees, new NameAgeComparator());
 //        System.out.println(employees);
         Question question=new Question();
-        int[] res=null;
-        System.out.println(question.twoSum(new int[]{2,7,11,15},9));
-        res=question.twoSum(new int[]{3,2,4},6);
-        for (int a:res){
-            System.out.println(a);
-        }
+        logger.info(String.valueOf(isAnagram("anagram","nagaram")));
 
+
+    }
+    public static boolean isAnagram(String s, String t) {
+        if (s.length() != t.length()) return false;
+
+        int[] count = new int[26];
+        for (char c : s.toCharArray()) count[c - 'a']++;
+        for (char c : t.toCharArray()) count[c - 'a']--;
+
+        for (int i : count) if (i != 0) return false;
+        return true;
     }
 
 

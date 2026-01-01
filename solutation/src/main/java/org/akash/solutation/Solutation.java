@@ -2,6 +2,7 @@ package main.java.org.akash.solutation;
 
 import main.java.org.akash.solutation.Link.ListNode;
 import main.java.org.akash.solutation.collsort.Employee;
+import main.java.org.akash.solutation.innerclass.OuterClass;
 import main.java.org.akash.solutation.marker.model.Admin;
 import main.java.org.akash.solutation.marker.model.User;
 import main.java.org.akash.solutation.marker.service.Processor;
@@ -13,7 +14,7 @@ public class Solutation {
     static Logger logger = Logger.getLogger(Solutation.class.getName());
 
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
 //        List<Employee> employees = new ArrayList<>(List.of(
 //                new Employee("Alice", 3, 70000, 30),
@@ -35,6 +36,9 @@ public class Solutation {
 //        Processor.process(admin);
 //        employees.sort(Comparator.comparing(Employee::getName).thenComparing(Employee::getAge));
 //        employees.forEach(System.out::println);
+//        OuterClass outerClass=new OuterClass();
+//        OuterClass.Inner inner=outerClass.new Inner();
+//        inner.print();
 
     }
 

@@ -1,6 +1,10 @@
 package main.java.org.akash.solutation;
 
 import main.java.org.akash.solutation.Link.ListNode;
+import main.java.org.akash.solutation.marker.model.Admin;
+import main.java.org.akash.solutation.marker.model.Employee;
+import main.java.org.akash.solutation.marker.model.User;
+import main.java.org.akash.solutation.marker.service.Processor;
 
 import java.util.HashMap;
 import java.util.List;
@@ -23,6 +27,12 @@ public class Solutation {
 //        System.out.println(employees);
         Question question=new Question();
         logger.info(("leetcode"));
+        User user=new User("Akash");
+        Employee employee=new Employee(101);
+        Admin admin=new Admin("Super_Admin");
+        Processor.process(user);
+        Processor.process(employee);
+        Processor.process(admin);
 
 
     }

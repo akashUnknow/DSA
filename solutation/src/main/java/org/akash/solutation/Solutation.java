@@ -2,6 +2,7 @@ package main.java.org.akash.solutation;
 
 import main.java.org.akash.solutation.Link.ListNode;
 import main.java.org.akash.solutation.collsort.Employee;
+import main.java.org.akash.solutation.custom.MyArrayList;
 import main.java.org.akash.solutation.innerclass.OuterClass;
 import main.java.org.akash.solutation.marker.model.Admin;
 import main.java.org.akash.solutation.marker.model.User;
@@ -39,6 +40,9 @@ public class Solutation {
 //        OuterClass outerClass=new OuterClass();
 //        OuterClass.Inner inner=outerClass.new Inner();
 //        inner.print();
+//        MyArrayList<String> list = new MyArrayList<>();
+//        list.add("apple");
+//        System.out.println(list.get(0));
 
     }
 

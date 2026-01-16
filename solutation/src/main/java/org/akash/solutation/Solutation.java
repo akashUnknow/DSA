@@ -7,6 +7,7 @@ import main.java.org.akash.solutation.innerclass.OuterClass;
 import main.java.org.akash.solutation.marker.model.Admin;
 import main.java.org.akash.solutation.marker.model.User;
 import main.java.org.akash.solutation.marker.service.Processor;
+import org.akash.solutation.jdbc.JdbcDemo;
 
 import java.util.*;
 import java.util.logging.Logger;
@@ -28,6 +29,8 @@ public class Solutation {
 //        Collections.sort(employees, new NameAgeComparator());
 //        System.out.println(employees);
 //        Question question=new Question();
+////        question.firstUniqChar("leetcode");
+//        System.out.println(firstUniqChar("leetcode"));
 //        logger.info(("leetcode"));
 //        User user=new User("Akash");
 //        Employee employee=new Employee(101);
@@ -43,7 +46,22 @@ public class Solutation {
 //        MyArrayList<String> list = new MyArrayList<>();
 //        list.add("apple");
 //        System.out.println(list.get(0));
+        JdbcDemo jdbcDemo=new JdbcDemo();
+        jdbcDemo.demoMethod();
+
 
     }
+//    private static int firstUniqChar(String leetcode) {
+//        int[] freq=new int[26];
+//        for (char c:leetcode.toCharArray()){
+//            freq[c-'a']++;
+//        }
+//        for (int i = 0; i < leetcode.length(); i++) {
+//            if (freq[leetcode.charAt(i)-'a']==1){
+//                return i;
+//            }
+//        }
+//        return -1;
+//    }
 
 }

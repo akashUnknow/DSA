@@ -23,7 +23,7 @@ public class JdbcDemo {
             Connection con = DriverManager.getConnection(url, user, password);
             Statement stmt = con.createStatement();
 //            ResultSet rs = stmt.executeQuery("SELECT * FROM employee");
-            int rowsInserted=stmt.executeUpdate("INSERT INTO employee (id, name, salary) VALUES (" + id + ", '" + name + "', " + salary + ")");
+            int rowsInserted=stmt.executeUpdate("UPDATE employee SET salary = salary + 1 WHERE id = " + id);
             System.out.println("Rows inserted: " + rowsInserted);
             ResultSet rs = stmt.executeQuery("SELECT * FROM employee");
 

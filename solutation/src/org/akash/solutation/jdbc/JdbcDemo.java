@@ -13,13 +13,17 @@ public class JdbcDemo {
 
     public void demoMethod() {
         try {
+            int id = 107;
+            String name = "vicky";
+            double salary = 60000;
+
             // Optional but correct
             Class.forName("org.postgresql.Driver");
 
             Connection con = DriverManager.getConnection(url, user, password);
             Statement stmt = con.createStatement();
 //            ResultSet rs = stmt.executeQuery("SELECT * FROM employee");
-            int rowsInserted=stmt.executeUpdate("INSERT INTO employee (id,name, salary) VALUES (106,'sunny', 55000) ");
+            int rowsInserted=stmt.executeUpdate("INSERT INTO employee (id, name, salary) VALUES (" + id + ", '" + name + "', " + salary + ")");
             System.out.println("Rows inserted: " + rowsInserted);
             ResultSet rs = stmt.executeQuery("SELECT * FROM employee");
 

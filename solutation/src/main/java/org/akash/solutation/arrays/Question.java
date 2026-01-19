@@ -39,4 +39,34 @@ public class Question {
         }
         return exceptedOutput-result;
     }
+
+//
+//    Input:  [0, 1, 0, 3, 12]
+//    Output: [1, 3, 12, 0, 0]
+    public void moveZeros(int[] arr){
+        int index=0;
+        for (int n:arr){
+            if (n!=0){
+                arr[index++]=n;
+            }
+        }
+        while (index<arr.length){
+            arr[index++]=0;
+        }
+        for (int n:arr) System.out.println(n);
+    }
+//    Input:  [8,7,2,5,3,1], sum=10
+//    Output: (8,2)
+
+    public void findPair(int[] arr, int target){
+        Set<Integer> set=new HashSet<>();
+        for (int n:arr){
+            int diff=target-n;
+            if(set.contains(diff)){
+                System.out.println(diff+" "+ n);
+                return;
+            }
+            set.add(n);
+        }
+    }
 }

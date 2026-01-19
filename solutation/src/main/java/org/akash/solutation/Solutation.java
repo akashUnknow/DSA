@@ -1,6 +1,7 @@
 package main.java.org.akash.solutation;
 
 import main.java.org.akash.solutation.Link.ListNode;
+import main.java.org.akash.solutation.arrays.Question;
 import main.java.org.akash.solutation.collsort.Employee;
 import main.java.org.akash.solutation.custom.MyArrayList;
 import main.java.org.akash.solutation.innerclass.OuterClass;
@@ -46,22 +47,11 @@ public class Solutation {
 //        MyArrayList<String> list = new MyArrayList<>();
 //        list.add("apple");
 //        System.out.println(list.get(0));
-        JdbcDemo jdbcDemo=new JdbcDemo();
-        jdbcDemo.demoMethod();
-
+//        JdbcDemo jdbcDemo=new JdbcDemo();
+//        jdbcDemo.demoMethod();
+        int[] arr=new int[]{10, 5, 20, 8};
+        Question arrayQuestion=new Question();
+        System.out.println(arrayQuestion.secondLargest(arr));
 
     }
-//    private static int firstUniqChar(String leetcode) {
-//        int[] freq=new int[26];
-//        for (char c:leetcode.toCharArray()){
-//            freq[c-'a']++;
-//        }
-//        for (int i = 0; i < leetcode.length(); i++) {
-//            if (freq[leetcode.charAt(i)-'a']==1){
-//                return i;
-//            }
-//        }
-//        return -1;
-//    }
-
 }

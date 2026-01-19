@@ -49,9 +49,10 @@ public class Solutation {
 //        System.out.println(list.get(0));
 //        JdbcDemo jdbcDemo=new JdbcDemo();
 //        jdbcDemo.demoMethod();
-        int[] arr=new int[]{10, 5, 20, 8};
+        int[] arr=new int[]{1, 2, 3, 2, 4, 1};
         Question arrayQuestion=new Question();
-        System.out.println(arrayQuestion.secondLargest(arr));
+//        System.out.println(arrayQuestion.secondLargest(arr));
+//        arrayQuestion.findDuplicates(arr);
 
     }
 }

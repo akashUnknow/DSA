@@ -1,5 +1,8 @@
 package main.java.org.akash.solutation.arrays;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Question {
 //    10, 5, 20, 8---->10
     public int secondLargest(int[] arr){
@@ -15,5 +18,16 @@ public class Question {
             }
         }
         return second;
+    }
+
+    public void findDuplicates(int[] arr){
+        Set<Integer> seen=new HashSet<>();
+        Set<Integer> duplicates=new HashSet<>();
+        for (int n:arr){
+            if(!seen.add(n)){
+                duplicates.add(n);
+            }
+        }
+        System.out.println(duplicates);
     }
 }

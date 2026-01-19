@@ -69,4 +69,30 @@ public class Question {
             set.add(n);
         }
     }
+//    Input:  [1,3,5], [2,4,6]
+//    Output: [1,2,3,4,5,6]
+
+    public int[] merge(int[] a,int[] b){
+        int i=0,j=0,k=0;
+        int[] result=new int[a.length+b.length];
+        while (i<a.length && j<b.length){
+            result[k++] = a[i] <b[j] ? a[i++]:b[j++];
+        }
+        while (i<a.length) result[k++]=a[i++];
+        while (j<b.length) result[k++]=b[j++];
+        return result;
+    }
+//    Input:  [16,17,4,3,5,2]
+//    Output: 17,5,2
+
+    public void findLeaders(int[] arr){
+        int maxFromRight=arr[arr.length-1];
+        System.out.println(maxFromRight+ " ");
+        for (int i = arr.length-2; i >=0; i--) {
+            if (arr[i]>maxFromRight){
+                maxFromRight=arr[i];
+                System.out.println(maxFromRight+ " ");
+            }
+        }
+    }
 }

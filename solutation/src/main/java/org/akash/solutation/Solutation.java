@@ -1,13 +1,13 @@
 package main.java.org.akash.solutation;
 
 import main.java.org.akash.solutation.Link.ListNode;
-import main.java.org.akash.solutation.arrays.Question;
 import main.java.org.akash.solutation.collsort.Employee;
 import main.java.org.akash.solutation.custom.MyArrayList;
 import main.java.org.akash.solutation.innerclass.OuterClass;
 import main.java.org.akash.solutation.marker.model.Admin;
 import main.java.org.akash.solutation.marker.model.User;
 import main.java.org.akash.solutation.marker.service.Processor;
+import main.java.org.akash.solutation.strings.Question;
 import org.akash.solutation.jdbc.JdbcDemo;
 
 import java.util.*;
@@ -49,12 +49,26 @@ public class Solutation {
 //        System.out.println(list.get(0));
 //        JdbcDemo jdbcDemo=new JdbcDemo();
 //        jdbcDemo.demoMethod();
-        int[] arr=new int[]{8,7,2,5,3,1};
-        Question arrayQuestion=new Question();
+//        int[] arr=new int[]{16,17,4,3,5,2};
+//        int[] arr2=new int[]{2,4,6};
+//        Question arrayQuestion=new Question();
 //        System.out.println(arrayQuestion.secondLargest(arr));
 //        arrayQuestion.findDuplicates(arr);
 //        System.out.println(arrayQuestion.missingNumber(arr,arr.length+1));
 //        arrayQuestion.moveZeros(arr);
-        arrayQuestion.findPair(arr,10);
+//        arrayQuestion.findPair(arr,10);
+//       int [] res= arrayQuestion.merge(arr,arr2);
+//       for (int re:res) System.out.println(re);
+//        arrayQuestion.findLeaders(arr);
+        Question question=new Question();
+//        System.out.println(question.reverseString("hello"));
+//        System.out.println(question.isPalindrome("madam"));
+//        question.countCharacters("java");
+//        System.out.println(question.isAnagram("listen","sileqnt"));
+//        System.out.println(question.reverseWords("Java is fun"));
+//        System.out.println(question.removeDuplicates("programming"));
+//        System.out.println(question.longestWord("Java is object oriented"));
+//        System.out.println(question.isOnlyDigits("123456"));
+        question.printSubstrings("abc");
     }
 }

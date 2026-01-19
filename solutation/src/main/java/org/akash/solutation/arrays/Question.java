@@ -19,7 +19,7 @@ public class Question {
         }
         return second;
     }
-
+//    1, 2, 3, 2, 4, 1---->[1, 2]
     public void findDuplicates(int[] arr){
         Set<Integer> seen=new HashSet<>();
         Set<Integer> duplicates=new HashSet<>();
@@ -29,5 +29,14 @@ public class Question {
             }
         }
         System.out.println(duplicates);
+    }
+
+    public int missingNumber(int[] arr, int n){
+        int exceptedOutput=n*(n+1)/2;
+        int result=0;
+        for (int num:arr){
+            result+=num;
+        }
+        return exceptedOutput-result;
     }
 }

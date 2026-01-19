@@ -49,10 +49,10 @@ public class Solutation {
 //        System.out.println(list.get(0));
 //        JdbcDemo jdbcDemo=new JdbcDemo();
 //        jdbcDemo.demoMethod();
-        int[] arr=new int[]{1, 2, 3, 2, 4, 1};
+        int[] arr=new int[]{1, 2, 4, 5};
         Question arrayQuestion=new Question();
 //        System.out.println(arrayQuestion.secondLargest(arr));
 //        arrayQuestion.findDuplicates(arr);
-
+        System.out.println(arrayQuestion.missingNumber(arr,arr.length+1));
     }
 }

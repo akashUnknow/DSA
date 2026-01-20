@@ -3,7 +3,9 @@ package main.java.org.akash.solutation;
 
 import main.java.org.akash.solutation.arrays.Question;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
 
@@ -57,9 +59,11 @@ public class Solutation {
         int[] arr=new int[]{1,10,2,6,5,3};
 //        int[] arr1=new int[]{3,1};
 //        intersection(arr,arr1).stream().forEach(n-> System.out.println(n));
-        System.out.println(Question.maxProduct(arr));
+//        System.out.println(duplicateChars();
+//        duplicateChars("programming");
+//        System.out.println(countWords("Java is very powerful"));
+//        System.out.println(compress("aaabbc"));
     }
-
 
 
 }

@@ -94,4 +94,28 @@ public class Question {
             }
         }
     }
+    public static String compress(String str) {
+        StringBuilder sb = new StringBuilder();
+        int count = 1;
+        for (int i=1;i<=str.length();i++){
+            if(i == str.length() || str.charAt(i)!=str.charAt(i-1)){
+                sb.append(str.charAt(i - 1)).append(count);
+                count=1;
+            }else {
+                count++;
+            }
+        }
+        return sb.toString();
+    }
+
+    public static int countWords(String str) {
+        return str.trim().split("\\s+").length;
+    }
+    public static void duplicateChars(String str) {
+        Map<Character,Integer> map=new HashMap<>();
+        for (char c:str.toCharArray()) map.put(c, map.getOrDefault(c,0)+1);
+        map.forEach((k,v)->{
+            if (v>1) System.out.println(k+" ");
+        });
+    }
 }

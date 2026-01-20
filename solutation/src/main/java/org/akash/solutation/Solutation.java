@@ -1,6 +1,8 @@
 package main.java.org.akash.solutation;
 
 
+import main.java.org.akash.solutation.arrays.Question;
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Logger;
@@ -52,12 +54,11 @@ public class Solutation {
 //       int [] res= arrayQuestion.merge(arr,arr2);
 //       for (int re:res) System.out.println(re);
 //        arrayQuestion.findLeaders(arr);
-        int[] arr=new int[]{1,4,20,3,10,5};
+        int[] arr=new int[]{1,10,2,6,5,3};
 //        int[] arr1=new int[]{3,1};
 //        intersection(arr,arr1).stream().forEach(n-> System.out.println(n));
+        System.out.println(Question.maxProduct(arr));
     }
-
-
 
 
 

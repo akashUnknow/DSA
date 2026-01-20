@@ -1,16 +1,8 @@
 package main.java.org.akash.solutation;
 
-import main.java.org.akash.solutation.Link.ListNode;
-import main.java.org.akash.solutation.collsort.Employee;
-import main.java.org.akash.solutation.custom.MyArrayList;
-import main.java.org.akash.solutation.innerclass.OuterClass;
-import main.java.org.akash.solutation.marker.model.Admin;
-import main.java.org.akash.solutation.marker.model.User;
-import main.java.org.akash.solutation.marker.service.Processor;
-import main.java.org.akash.solutation.strings.Question;
-import org.akash.solutation.jdbc.JdbcDemo;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.logging.Logger;
 
 public class Solutation {
@@ -60,15 +52,13 @@ public class Solutation {
 //       int [] res= arrayQuestion.merge(arr,arr2);
 //       for (int re:res) System.out.println(re);
 //        arrayQuestion.findLeaders(arr);
-        Question question=new Question();
-//        System.out.println(question.reverseString("hello"));
-//        System.out.println(question.isPalindrome("madam"));
-//        question.countCharacters("java");
-//        System.out.println(question.isAnagram("listen","sileqnt"));
-//        System.out.println(question.reverseWords("Java is fun"));
-//        System.out.println(question.removeDuplicates("programming"));
-//        System.out.println(question.longestWord("Java is object oriented"));
-//        System.out.println(question.isOnlyDigits("123456"));
-        question.printSubstrings("abc");
+        int[] arr=new int[]{1,4,20,3,10,5};
+//        int[] arr1=new int[]{3,1};
+//        intersection(arr,arr1).stream().forEach(n-> System.out.println(n));
     }
+
+
+
+
+
 }

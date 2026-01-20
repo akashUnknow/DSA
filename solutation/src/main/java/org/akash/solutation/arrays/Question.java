@@ -95,4 +95,39 @@ public class Question {
             }
         }
     }
+    public static void subArraySum(int[] arr, int sum) {
+        int start=0,count=0;
+        for (int i = 0; i < arr.length; i++) {
+            count+=arr[i];
+            while (count>sum){
+                count-=arr[start++];
+            }
+            if (count==sum){
+                System.out.println("Found between " + (start+1) + " and " + (i+1));
+                return;
+            }
+        }
+
+    }
+
+
+    public static Set<Integer> intersection(int[] a, int[] b) {
+        Set<Integer> set1 = new HashSet<>();
+        Set<Integer> result = new HashSet<>();
+
+        for (int num : a) set1.add(num);
+        for (int num : b) {
+            if (set1.contains(num)) result.add(num);
+        }
+        return result;
+    }
+
+    public static int majorityElement(int[] nums) {
+        int count=0,repet=0;
+        for (int num:nums){
+            if (count==0) repet=num;
+            count+=(num==repet)?1:-1;
+        }
+        return repet;
+    }
 }

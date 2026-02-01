@@ -1,42 +1,47 @@
 package main.java.org.akash.solutation.collsort;
-public class Employee implements Comparable<Employee> {
+public class Employee {
     private String name;
     private int id;
     private double salary;
-    private int age;
+    private String dept;
 
-    public Employee(String name, int id, double salary , int age) {
+    public Employee( int id,String name, double salary , String dept) {
         this.name = name;
         this.id = id;
         this.salary = salary;
-        this.age=age;
+        this.dept=dept;
     }
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public double getSalary() {
         return salary;
     }
-    public int getAge() {
-        return age;
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
-    @Override
-    public int compareTo(Employee other) {
-        return Integer.compare(this.age, other.age);
+    public String getDept() {
+        return dept;
     }
-    public int compare(Employee e1,Employee e2){
-        int flage=e1.getName().compareTo(e2.getName());
-        if (flage == 0) {
-            flage=e1.getAge()-e2.getAge();
-        }
-        return flage;
+
+    public void setDept(String dept) {
+        this.dept = dept;
     }
 
     @Override
@@ -45,23 +50,7 @@ public class Employee implements Comparable<Employee> {
                 "name='" + name + '\'' +
                 ", id=" + id +
                 ", salary=" + salary +
-                ", age=" + age +
+                ", dept=" + dept +
                 '}';
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 }
